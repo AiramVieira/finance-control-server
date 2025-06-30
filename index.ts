@@ -3,6 +3,8 @@ import { cors } from "hono/cors";
 import { connectDatabase } from "./database/connection.ts";
 import finances from "./routes/finances.ts";
 import health from "./routes/health-check.ts";
+import dotenv from "dotenv"
+dotenv.config();
 
 connectDatabase();
 
